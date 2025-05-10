@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231</title>
+    <meta name="description" content="WDD 231 - Web Development II">
+    <meta name="author" content="Kelsey Woodland">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <img src="images/profile.webp" alt="Kelsey Woodland's Profile Picture" width="100">
+            <span id="name">Kelsey Woodland</span>
+        </div>
+        <button type="button" id="menu" aria-label="Toggle navigation"></button>
+        <nav class="navigation">
+                <a href="index.html" title="Home" class="active">Home</a>
+                <a href="chamber.html" title="Chamber" class="active">Chamber</a>
+                <a href="final.html" title="Final" class="active">Final</a>
+                <a href="github.io/kelwood" title="GitHub" class="active">GitHub Profile</a>
+                <a href="linkedin.com/in/kelsey-woodland" title="LinkedIn" class="active">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="container">
+            <div class="card">
+                <h2>Course Work</h2>
+            </div>
+            <div class="card">
+                <h2>Woodland Hills, Utah</h2>
+                <img src="images/utah.webp" alt="Utah Landscape" class="landscape-image">
+            </div>  
+            <div class="card">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div>
+                    <button id="allCourses">All courses</button>
+                    <button id="wddCourses">WDD courses</button>
+                    <button id="cseCourses">CSE courses</button>
+                </div>
+                <p id="totalCredits">Total number of course credits listed below is 0</p>
+                
+                <div id="courses" class="courses">
+
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer-content">
+        <p>&copy; <span id="currentYear"></span> 🌲 Kelsey Woodland 🌲 Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>

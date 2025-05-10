@@ -1,0 +1,150 @@
+body {
+    font-family: "Big Shoulders", sans-serif;
+}
+
+.header-content {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Big Shoulders", sans-serif;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.header-content h1,
+.footer-content h4 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(95, 93, 93);
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+}
+
+nav a:hover {
+    color: rgb(44, 43, 43);
+    background-color: white;
+}
+
+.open a {
+    display: block;
+    padding: 1em;
+}
+
+#menu {
+    font-size: 1.5em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em 1em 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em 1em 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.card:nth-child(1), .card:nth-child(2) {
+    flex-basis: 1 1 45%;
+}
+
+.container .card:nth-child(3) {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+    font-family: "Big Shoulders", sans-serif;
+    margin: 0;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}
+
+.completed-course {
+    background-color: lavender;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.course-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: lavender;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(152, 220, 242);
+}
+
+
+
+.footer-content {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Big Shoulders", sans-serif;
+    height: 50px;
+    border-radius: 10px;
+}

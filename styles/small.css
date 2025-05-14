@@ -2,62 +2,65 @@ body {
     font-family: "Big Shoulders", sans-serif;
 }
 
-.header-content {
+header {
     background-color: black;
     color: white;
     padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 110px auto 44px;
+    align-items: end;
     font-family: "Big Shoulders", sans-serif;
-    height: 50px;
     border-radius: 10px;
 }
 
-.header-content h1,
+nav {
+    background-color: rgb(107, 103, 103);
+}
+
+h1,
 .footer-content h4 {
     margin: 0;
     padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    align-items: center;
-    background-color: rgb(95, 93, 93);
-    border-radius: 10px;
-}
-
-nav a {
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
     color: white;
     text-decoration: none;
-    font-family: "Big Shoulders", sans-serif;
 }
 
-nav a:hover {
-    color: rgb(44, 43, 43);
-    background-color: white;
+li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.open a {
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+}
+
+ul.menuLinks.open {
     display: block;
-    padding: 1em;
 }
 
-#menu {
-    font-size: 1.5em;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+   
 }
 
-#menu::before {
+#myButton::before {
     content: "≡";
 }
 
-#menu.open::before {
-    content: "❌";
+#myButton.open::before {
+    content: "X";
 }
 
 .container {
@@ -115,8 +118,7 @@ h2 {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 button {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogsmeade Chamber Directory</title>
+    <meta name="description" content="Hogsmeade Chamber Directory">
+    <meta name="author" content="Kelsey Woodland">
+    <meta property="og:title" content="Hogsmeade Chamber Directory">
+    <meta property="og:description"
+        content="A directory of local businesses in Hogsmeade, Great Britain.">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="https://kelwood22.github.io/wdd231/directory.html">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/view.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/hogsmeade.webp" alt="Hogsmeade Chamber of Commerce Logo" width="75" height="75">
+        <h1>Hogsmeade Chamber</h1>
+        <button id="menuButton"></button>
+    </header>
+
+    <nav id="animated">
+        
+        <ul class="menuLinks">
+            <li><a href="index.html" id="home" title="Home">Home</a></li>
+            <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
+            <li><a href="join.html" id="join" title="Join">Join</a></li>
+            <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <div id="cards-container" class="cards-grid"></div>
+        <table id="directory-list" class="list" style="display: none">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>  
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </main>
+    <footer>
+        <div class="footer-left">
+            <h4>Hogsmeade Chamber of Commerce</h4>
+            <address>
+                123 Hogsmeade Lane<br>
+                Hogsmeade, Scotland<br>
+                +44 123 456 7890<br>
+                info@hogsmeadechamber.com
+            </address>
+        </div>
+
+        <div class="footer-center">
+            <a href="#" class="social-icon"><img src="images/x.webp" alt="X" width="30" height="30"></a>
+            <a href="#" class="social-icon"><img src="images/facebook.webp" alt="Facebook" width="30" height="30"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.webp" alt="Instagram" width="30" height="30"></a>
+        </div>
+
+        <div class="footer-right">
+            <p>WDD231 Class Project<br>
+            Kelsey Woodland<br>
+            <span id="currentYear"></span> Hogsmeade Chamber of Commerce<br>
+            <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

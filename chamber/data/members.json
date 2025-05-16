@@ -1,0 +1,157 @@
+
+{
+"members": [
+    {
+    "name": "Honeydukes",
+    "address": {
+        "street": "123 Sweet St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 1234 567890",
+    "website": "www.honeydukes.com",
+    "image": "images/honeydukes.webp",
+    "membershipLevel": "Gold",
+    "description": "Honeydukes is a famous sweet shop in Hogsmeade, known for its magical sweets and treats. It offers a wide variety of candies, chocolates, and other confections that are sure to delight any witch or wizard."
+},
+{
+    "name": "The Three Broomsticks",
+    "address": {
+        "street": "456 Pub Lane",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 9876 543210",
+    "website": "www.threebroomsticks.com",
+    "image": "images/threebroomsticks.webp",
+    "membershipLevel": "Silver",
+    "description": "The Three Broomsticks is a popular inn and pub in Hogsmeade, known for its warm atmosphere and delicious butterbeer. It's a favorite gathering place for students from Hogwarts and locals alike."
+},
+{
+    "name": "Zonko's Joke Shop",
+    "address": {
+        "street": "789 Prank Ave",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 1357 246890",
+    "website": "www.zonkos.com",
+    "image": "images/zonkos.webp",
+    "membershipLevel": "Member",
+    "description": "Zonko's Joke Shop is a whimsical store in Hogsmeade that specializes in magical jokes and pranks. It offers a wide range of joke items, including trick wands, exploding bonbons, and more."
+},
+{
+    "name": "The Hog's Head Inn",
+    "address": {
+        "street": "321 Inn St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 2468 135790",
+    "website": "www.hogsheadinn.com",
+    "image": "images/hogshead.webp",
+    "membershipLevel": "Gold",
+    "description": "The Hog's Head Inn is a rustic inn in Hogsmeade, known for its cozy atmosphere and unique clientele. It's a great place to relax and enjoy a drink after a long day."
+},
+{
+    "name": "The Owl Post",
+    "address": {
+        "street": "654 Mail St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 7890 123456",
+    "website": "www.owlpost.com",
+    "image": "images/owl.webp",
+    "membershipLevel": "Silver",
+    "description": "The Owl Post is a charming post office in Hogsmeade that specializes in delivering letters and packages via owls. It's a convenient service for witches and wizards who need to send messages quickly."
+},
+{
+    "name": "Dervish and Banges",
+    "address": {
+        "street": "987 Shop St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 1357 246890",
+    "website": "www.dervishandbanges.com",
+    "image": "images/dervish.webp",
+    "membershipLevel": "Member",
+    "description": "Dervish and Banges is a magical shop in Hogsmeade that sells a variety of wizarding supplies, including books, quills, and other magical items. It's a must-visit for any witch or wizard."
+},
+{
+    "name": "The Shrieking Shack",
+    "address": {
+        "street": "222 Haunted Rd",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 1357 246890",
+    "website": "www.shriekingshack.com",
+    "image": "images/shack.webp",
+    "membershipLevel": "Silver",
+    "description": "The Shrieking Shack is a notorious haunted house in Hogsmeade, known for its spooky atmosphere and ghostly legends. It's a popular spot for thrill-seekers and ghost hunters."
+},
+{
+    "name": "The Wizarding Wireless Network",
+    "address": {
+        "street": "333 Radio St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 2468 135790",
+    "website": "www.wizardingwireless.com",
+    "image": "images/wireless.webp",
+    "membershipLevel": "Member",
+    "description": "The Wizarding Wireless Network is a magical radio station that broadcasts news, music, and entertainment to the wizarding community. It's a great way to stay connected with the latest happenings."
+},
+{
+    "name": "The Quibbler",
+    "address": {
+        "street": "444 News St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 1357 246890",
+    "website": "www.thequibbler.com",
+    "image": "images/quibbler.webp",
+    "membershipLevel": "Gold",
+    "description": "The Quibbler is a popular wizarding magazine known for its quirky articles and sensational stories. It's a must-read for anyone interested in the latest gossip and news from the wizarding world."
+},
+{
+    "name": "The Daily Prophet",
+    "address": {
+        "street": "555 News St",
+        "city": "Hogsmeade",
+        "state": "Scotland",
+        "country": "United Kingdom",
+        "zip": "12345"
+    },
+    "phone": "+44 2468 135790",
+    "website": "www.dailyprophet.com",
+    "image": "images/prophet.webp",
+    "membershipLevel": "Silver",
+    "description": "The Daily Prophet is the leading newspaper in the wizarding world, providing news, articles, and advertisements. It's a great source of information for witches and wizards."
+}
+]
+}
+
+

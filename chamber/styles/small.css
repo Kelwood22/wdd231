@@ -1,5 +1,7 @@
+
 body {
     font-family: "Big Shoulders", sans-serif;
+    font-display: swap;
 }
 
 header {
@@ -76,6 +78,14 @@ li.active a {
 .menu button {
     padding: 1rem;
     font-weight: 700;
+}
+
+#cards-container {
+    min-height: 500px;
+}
+
+#directory-list {
+    min-height: 300px;
 }
 
 .cards-grid {

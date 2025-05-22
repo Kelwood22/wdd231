@@ -92,6 +92,7 @@ li.active a {
 
 #directory-list {
     min-height: 300px;
+    display: none;
 }
 
 .cards-grid {

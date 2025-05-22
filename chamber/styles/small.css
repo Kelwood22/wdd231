@@ -26,6 +26,13 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
+main {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+
+}
+
 
 #menuButton {
     font-size: 2rem;
@@ -90,9 +97,11 @@ li.active a {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
     border: 1px solid #ccc;
     padding: 1rem;
 }
@@ -123,6 +132,8 @@ li.active a {
 .list {
     width: 100%;
     border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
 }
 
 .list th, .list td {

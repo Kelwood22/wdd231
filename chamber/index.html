@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogsmeade Chamber of Commerce</title>
+    <meta name="description" content="Hogsmeade Chamber Home Page">
+    <meta name="author" content="Kelsey Woodland">
+    <meta property="og:title" content="Hogsmeade Chamber Home Page">
+    <meta property="og:description" content="The Hogsmeade Chamber of Commerce is a community organization that supports local businesses and promotes the unique charm of Hogsmeade. This home page includes current events, local weather, and local business highlights.">
+    <meta property="og:image" content="https://kelwood22.github.io/wdd231/chamber/index.html/images/hogsmeade.webp">
+    <meta property="og:url" content="https://kelwood22.github.io/wdd231/chamber/index.html">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/hogsmeade.webp" alt="Hogsmeade Chamber of Commerce Logo" width="75" height="75">
+        <h1>Hogsmeade Chamber of Commerce</h1>
+        <button id="menuButton"></button>
+    </header>
+    <main>
+
+    <nav id="animated">
+
+        <ul class="menuLinks">
+            <li><a href="index.html" id="home" title="Home">Home</a></li>
+            <li><a href="directory.html" id="directory" title="Directory">Directory</a></li>
+            <li><a href="join.html" id="join" title="Join">Join</a></li>
+            <li><a href="discover.html" id="discover" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+        <h2>Home</h2>
+        <img src="images/hogsmeadehero.jpg" alt="Hero Image" class="hero-image" width="1000" height="500">
+        <div class="cards-container">
+            <div class="events">
+                <h3>Current Events</h3>
+            </div>
+            
+            <div class="currentWeather">
+                <h3>Current Weather</h3>
+                <div class="currentWeatherCard">
+                    <h4 id="town">Loading town name...</h4>
+                    <img id="graphic" src="images/hogsmeade.webp" alt="Weather icon" width="100" height="100">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            
+            </div>
+                
+            
+            <div class="weatherForecast">
+                <h3>Weather Forecast</h3>
+                <div class="forecastCard">
+                    <div class="forcastDay">
+                        <h4 id="day1">Loading forecast...</h4>
+                        <p id="day1Temp"></p>
+                    </div>
+                    <div class="forcastDay">
+                        <h4 id="day2">Loading forecast...</h4>
+                        <p id="day2Temp"></p>
+                    </div>
+                    <div class="forcastDay">
+                        <h4 id="day3">Loading forecast...</h4>
+                        <p id="day3Temp"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="spotlights">
+                <div id="spotlight-container">
+                    <div class="spotlight-card"></div>
+                    <div class="spotlight-card"></div>
+                    <div class="spotlight-card"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="footer-left">
+        <h4>Hogsmeade Chamber of Commerce</h4>
+        <address>
+            123 Hogsmeade Lane<br>
+            Hogsmeade, Scotland<br>
+            +44 123 456 7890<br>
+            info@hogsmeadechamber.com
+        </address>
+    </div>
+
+    <div class="footer-center">
+        <a href="#" class="social-icon"><img src="images/x.webp" alt="X" width="30" height="30"></a>
+        <a href="#" class="social-icon"><img src="images/facebook.webp" alt="Facebook" width="30" height="30"></a>
+        <a href="#" class="social-icon"><img src="images/instagram.webp" alt="Instagram" width="30" height="30"></a>
+    </div>
+
+    <div class="footer-right">
+        <p>WDD231 Class Project<br>
+            Kelsey Woodland<br>
+            <span id="currentYear"></span> Hogsmeade Chamber of Commerce<br>
+            <span id="lastModified"></span>
+        </p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>

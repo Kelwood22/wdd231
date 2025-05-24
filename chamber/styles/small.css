@@ -65,7 +65,7 @@ ul.menuLinks {
 }
 
 ul.menuLinks a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 li.active a {
@@ -106,7 +106,74 @@ li.active a {
     padding: 1rem;
 }
 
-.card {
+.hero-image{
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin: 1rem 0;
+    background-color: rgb(207, 204, 204);
+    color: black;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.currentWeather, .weatherForecast, .events {
+    flex: 1;
+    max-width: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 1rem auto;
+}
+
+.currentWeatherCard h4, .weatherForecastCard h4, .events h4 {
+    color: #333;
+    margin: .3rem 0;
+}
+
+.currentWeatherCard #description {
+    text-transform: capitalize;
+    color: #333;
+    margin: .3rem 0;
+}
+
+.currentWeatherCard #temperature, .forecastCard p {
+    font-size: 2rem;
+    color: #333;
+    margin: .3rem 0;
+}
+
+@media (max-width: 37rem) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .currentWeather, .weatherForecast, .events {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+.card, .spotlight-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
@@ -115,7 +182,7 @@ li.active a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+.card img, .spotlight-card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -144,6 +211,13 @@ li.active a {
 .list th {
     background-color: #333;
     color: white
+}
+
+#spotlight-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 footer {

@@ -17,4 +17,17 @@
     nav {
         grid-template-rows: 1fr;
     }
+
+    .cards-container {
+        gap: 30px;
+        align-items: start;
+
+    }
+
+    .currentWeather, .weatherForecast, .events, .spotlights {
+        width: 100%;
+        min-height: 400px;
+        padding: 1.5rem;
+    }
+
 }

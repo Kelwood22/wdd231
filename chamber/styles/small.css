@@ -69,7 +69,7 @@ ul.menuLinks a:hover {
 }
 
 li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(59, 58, 58, 0.2);
 }
 
 .menu {
@@ -96,7 +96,6 @@ li.active a {
     background-color: rgba(168, 166, 168, 0.5);
     padding: 20px;
     color: black;
-    border-radius: 8px;
 }
 
 .cta-button {

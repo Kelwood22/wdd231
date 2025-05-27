@@ -10,6 +10,14 @@ const myLon = "-4.680938064740463"
 const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
+    const cachedWeather = localStorage.getItem("weatherData");
+    const lastFetchTime = localStorage.getItem("weatherFetchTime");
+
+    if (cachedWeather && lastFetchTime && (Date.now() - lastFetchTime < 600000)) {
+        displayResults(JSON.parse(cachedWeather));
+        console.log("Using cached weather data.");
+        return;
+    }
     try {
         const response = await fetch(myURL);
         if (response.ok) {

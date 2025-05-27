@@ -12,6 +12,14 @@ const forecastLon = "-4.680938064740463"
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${forecastLat}&lon=${forecastLon}&appid=${forecastKey}&units=imperial`;
 
 async function fetchForecast() {
+    const cachedForecast = localStorage.getItem("forecastData");
+    const lastFetchTime = localStorage.getItem("forecastFetchTime");
+
+    if (cachedForecast && lastFetchTime && (Date.now() - lastFetchTime < 600000)) {
+        displayForecast(JSON.parse(cachedForecast));
+        console.log("Using cached forecast data.");
+        return;
+    }
     try {
         const response = await fetch(forecastURL);
         if (response.ok) {

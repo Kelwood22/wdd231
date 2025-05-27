@@ -87,10 +87,16 @@ li.active a {
 }
 
 .cta-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
-    margin: 20px auto;
+    background-color: rgba(168, 166, 168, 0.3);
     padding: 20px;
-    background-color: #f8f8f8;
+    color: white;
+    border-radius: 8px;
 }
 
 .cta-button {
@@ -127,10 +133,16 @@ li.active a {
     padding: 1rem;
 }
 
-.hero-image{
+
+.hero-container {
+    position: relative;
     width: 100%;
-    max-height: 800px;
-    object-fit: cover;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 h3 {

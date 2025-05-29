@@ -86,6 +86,7 @@ const wddCoursesButton = document.getElementById('wddCourses');
 const cseCoursesButton = document.getElementById('cseCourses');
 const totalCredits = document.getElementById('totalCredits');
 
+
 function displayCourses(filteredCourses) {
     courseCards.innerHTML = ''; 
 
@@ -102,6 +103,12 @@ function displayCourses(filteredCourses) {
         courseCard.appendChild(courseTitle);
 
         courseCards.appendChild(courseCard);
+
+        courseCard.setAttribute('role', 'button');
+        courseCard.setAttribute('tabindex', '0');
+        courseCard.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     });
 
     const computedCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
@@ -111,6 +118,25 @@ function displayCourses(filteredCourses) {
 allCoursesButton.addEventListener("click", () => displayCourses(courses));
 wddCoursesButton.addEventListener("click", () => displayCourses(courses.filter(course => course.subject === "WDD")));
 cseCoursesButton.addEventListener("click", () => displayCourses(courses.filter(course => course.subject === "CSE")));
+
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('courseDetails');
+    console.log(courseDetails);
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
 
 

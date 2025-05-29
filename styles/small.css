@@ -118,7 +118,8 @@ h2 {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    border-radius: 10px;   
+    border-radius: 10px;
+    cursor: pointer;   
 }
 
 button {
@@ -133,6 +134,26 @@ button {
 
 button:hover {
     background-color: rgb(152, 220, 242);
+}
+
+dialog {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
 }
 
 

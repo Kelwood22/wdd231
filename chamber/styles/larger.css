@@ -30,4 +30,18 @@
         padding: 1.5rem;
     }
 
+    .membership-container {
+        flex-direction: row;
+    }
+
+    .membership-application {
+        width: 65%;
+    }
+
+    .membership-levels {
+        width: 30%;
+        margin-top: 0;
+    }
+ 
+
 }

@@ -317,13 +317,24 @@ form button:hover {
 
 .membership-card {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInScale 1.5s ease-out forwards, colorShift 5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 

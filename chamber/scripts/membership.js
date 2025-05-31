@@ -49,12 +49,29 @@ const membership = [
 
 const membershipCards = document.getElementById('membershipCards');
 
+if (membershipCards) {
+    displayMemberships();
+} else {
+    console.error("Element with ID 'membershipCards' not found.");
+}
+
 function displayMemberships() {
+    console.log("Displaying memberships...");
+
+    const membershipCards = document.getElementById('membershipCards');
+    if (!membershipCards) {
+        console.error("Element with ID 'membershipCards' not found.");
+        return;
+    }
+
     membershipCards.innerHTML = '';
 
+   
     membership.forEach(level => {
+        console.log("Creating membership card for: ", level.title);
+
         const membershipCard = document.createElement('div');
-        membershipCard.classList.add('membershipCard');
+        membershipCard.classList.add('membership-card');
 
         const title = document.createElement('h3');
         title.textContent = level.title;
@@ -76,10 +93,18 @@ function displayMemberships() {
     });
 }
 
-displayMemberships();
+document.addEventListener("DOMContentLoaded", () => {
+    displayMemberships();
+});
 
 function displayMembershipDetails(level) {
     const membershipDetails = document.getElementById('membershipDetails');
+    
+    if (!membershipDetails) {
+        console.error("Element with ID 'membershipDetails' not found.");
+        return;
+    }
+    
     membershipDetails.innerHTML = `
         <button id="closeModal">X</button>
         <h2> ${ level.title }</h2>

@@ -1,0 +1,31 @@
+:root {
+    --background-color: #E7E5E5;
+    --text-color: #353A47;
+    --accent-color: #55286F;
+    --secondary-color: #0B6E4F;
+    --primary-font: 'Big Shoulders', sans-serif;
+}
+
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin-bottom: 0.5em;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Big Shoulders', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}

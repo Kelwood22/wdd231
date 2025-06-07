@@ -1,0 +1,74 @@
+{
+    "places": [
+        {
+            "name": "The Three Broomsticks",
+            "address": "4426 Main Way Universal, Universal City, CA 91602",
+            "cost": "$8 per Butterbeer",
+            "description": "A cozy pub serving the famous wizarding drink, along with hearty British meals.",
+            "photo": "photo-threebroomsticks.webp"
+        },
+        {
+            "name": "Honeydukes",
+            "address": "Located in Hogsmeade at Universal Orlando",
+            "cost": "Varies by candy selection",
+            "description": "A magical sweet shop filled with Chocolate Frogs, Fizzing Whizzbees, and other wizarding treats.",
+            "photo": "photo-honeydukes.webp"
+        },
+        {
+            "name": "Zonko’s Joke Shop",
+            "address": "Inside Hogsmeade at Universal Orlando",
+            "cost": "Varies by prank item",
+            "description": "A haven for pranksters, stocked with magical joke items and trick sweets.",
+            "photo": "photo-zonkos.webp"
+        },
+        {
+            "name": "The Shrieking Shack",
+            "address": "Near the edge of Hogsmeade",
+            "cost": "Free to explore",
+            "description": "Known as the most haunted building in Britain, with eerie legends surrounding it.",
+            "photo": "photo-shriekingshack.webp"
+        },
+        {
+            "name": "Ollivanders",
+            "address": "Inside Hogsmeade at Universal Orlando",
+            "cost": "$55 per interactive wand",
+            "description": "Experience the magic of a wand choosing its wizard in this immersive shop.",
+            "photo": "photo-ollivanders.webp"
+        },
+        {
+            "name": "Hogsmeade Post Office",
+            "address": "Hogsmeade Post Office, Universal Orlando",
+            "cost": "Varies by delivery distance",
+            "description": "Choose an owl to deliver your message across the wizarding world.",
+            "photo": "photo-postoffice.webp"
+        },
+        {
+            "name": "Dervish and Banges",
+            "address": "Inside Hogsmeade at Universal Orlando",
+            "cost": "Varies by magical equipment",
+            "description": "A shop specializing in enchanted gadgets and broomstick repairs.",
+            "photo": "photo-dervishandbanges.webp"
+        },
+        {
+            "name": "Madam Puddifoot’s Tea Shop",
+            "address": "Inside Hogsmeade at Universal Orlando",
+            "cost": "$5 per tea",
+            "description": "A charming café known for its cozy atmosphere and romantic setting.",
+            "photo": "photo-madampuddifoot.webp"
+        },
+        {
+            "name": "Hogsmeade Station",
+            "address": "Hogsmeade Station, Universal Orlando",
+            "cost": "Included with park admission",
+            "description": "Take in the sights and sounds of the iconic train station as students arrive at Hogwarts.",
+            "photo": "photo-hogsmeadestation.webp"
+        },
+        {
+            "name": "Gladrags Wizardwear",
+            "address": "Inside Hogsmeade at Universal Orlando",
+            "cost": "Varies by robe and accessory",
+            "description": "Find unique wizarding robes and accessories to match your magical style.",
+            "photo": "photo-gladrags.webp"
+        }
+    ]
+}

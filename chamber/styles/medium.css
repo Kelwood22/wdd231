@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+
+    #places div {
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo location"
+            "photo learn-more"
+    }
+
+    #places div img {
+        width: 300px;
+    }
+
+    #places div img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+}

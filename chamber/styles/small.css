@@ -355,6 +355,66 @@ form button:hover {
     color: white;
 }
 
+#places div {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "location"
+        "learn-more";
+}
+
+#places div h2 {
+    color: black;
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#places div img {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+}
+
+#places div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#places div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.learn-more-btn {
+    background-color: rgb(207, 204, 204);
+    color: black;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 1rem 10px;
+    font-family: "Big Shoulders", sans-serif;
+    text-align: center;
+    grid-area: learn-more;
+}
+
+#visitMessage {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+
 footer {
     display: flex;
     justify-content: space-between;

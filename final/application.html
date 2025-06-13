@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts School of Witchcraft and Wizardry</title>
+    <meta name="description" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <meta name="author" content="Kelsey Woodland">
+    <meta property="og:title" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <meta property="og:description"
+        content="The Hogwarts School of Witchcraft and Wizardry is a magical institution that provides education to young witches and wizards. This home page includes information about the school, its history, and information on how to apply.">
+    <meta property="og:image" content="https://kelwood22.github.io/wdd231/final/index.html/images/.webp">
+    <meta property="og:url" content="https://kelwood22.github.io/wdd231/final/index.html">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/application.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap"
+        as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/hogwarts.webp" alt="Hogwarts Logo" width="75" height="75">
+        <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+        <button id="menuButton" aria-label="Open menu"></button>
+    </header>
+    <main>
+
+        <nav id="animated">
+
+            <ul class="menuLinks">
+                <li><a href="index.html" id="home" title="Home">Home</a></li>
+                <li><a href="courses.html" id="directory" title="Directory">Courses</a></li>
+                <li><a href="apply.html" id="join" title="Join">Apply</a></li>
+            </ul>
+        </nav>
+
+        <div class="hogwarts-application">
+            <h2>Hogwarts Application Form</h2>
+            <form id="applicationForm" method="GET" action="thankyou.html">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first">First Name<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label for="last">Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label for="birthdate">Birthdate<input type="date" name="birthdate" required autocomplete="bday" title="Your Birthdate"></label>
+                    <label for="address">Address<input type="text" name="address" required autocomplete="street-address" title="Your Street Address"></label>
+                    <label for="city">City<input type="text" name="city" required autocomplete="address-level2" title="Your City"></label>
+                    <label for="state">State/Province<input type="text" name="state" required autocomplete="address-level1" title="Your State or Province"></label>
+                    <label for="postal">Postal Code<input type="text" name="postal" required autocomplete="postal-code" title="Your Postal Code" pattern="[A-Za-z0-9\- ]{5,10}"></label>
+                    <label for="country">Country<input type="text" name="country" required autocomplete="country" title="Your Country" pattern="[A-Za-z\- ]{2,}"></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Wand Details</legend>
+                    <label for="wand-wood">Wand Wood:
+                        <select id="wand-wood" name="wandWood" required>
+                            <option value="" selected disabled>Select Wand Wood</option>
+                            <option value="alder">Alder</option>
+                            <option value="ash">Ash</option>
+                            <option value="cherry">Cherry</option>
+                            <option value="elder">Elder</option>
+                            <option value="hawthorn">Hawthorn</option>
+                            <option value="holly">Holly</option>
+                            <option value="oak">Oak</option>
+                            <option value="willow">Willow</option>
+                            <option value="yew">Yew</option>
+                        </select>
+                    </label>
+                    <label for="wand-length">Wand Length:
+                        <select id="wand-length" name="wandLength" required>
+                            <option value="" selected disabled>Select Wand Length</option>
+                            <option value="9">9 inches</option>
+                            <option value="10">10 inches</option>
+                            <option value="11">11 inches</option>
+                            <option value="12">12 inches</option>
+                            <option value="13">13 inches</option>
+                            <option value="14">14 inches</option>
+                        </select>
+                    </label>
+                    <label for="wand-core">Wand Core:
+                        <select id="wand-core" name="wandCore" required>
+                            <option value="" selected disabled>Select Wand Core</option>
+                            <option value="acromantula-silk">Acromantula Silk</option>
+                            <option value="dragon-heartstring">Dragon Heartstring</option>
+                            <option value="phoenix-feather">Phoenix Feather</option>
+                            <option value="thestral-hair">Thestral Hair</option>
+                            <option value="unicorn-hair">Unicorn Hair</option>
+                        </select>
+                    </label>
+                
+                    <label for="wand-flexibility">Wand Flexibility:
+                        <select id="wand-flexibility" name="wandFlexibility" required>
+                            <option value="" selected disabled>Select Wand Flexibility</option>
+                            <option value="rigid">Rigid</option>
+                            <option value="slightly-springy">Slightly Springy</option>
+                            <option value="supple">Supple</option>
+                            <option value="unyielding">Unyielding</option>
+                            <option value="whippy">Whippy</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Magical Background</legend>
+                    <label for="patronus">Patronus (if known):<input type="text" id="patronus" name="patronus" required></label>
+                    <label for="reason">Why do you want to attend Hogwarts?</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+                    <label for="talents">What magical talents or interests do you possess?</label>
+                    <textarea id="talents" name="talents" rows="4"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>House Preference (though the Sorting Hat has the final say!)</legend>
+                    <label><input type="radio" name="housePreference" value="gryffindor" required>Gryffindor</label>
+                    <label><input type="radio" name="housePreference" value="hufflepuff">Hufflepuff</label>
+                    <label><input type="radio" name="housePreference" value="ravenclaw">Ravenclaw</label>
+                    <label><input type="radio" name="housePreference" value="slytherin">Slytherin</label>         
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Extracurricular Interests</legend>
+                    <label for="quidditch">
+                            <input type="checkbox" id="quidditch" name="extracurriculars" value="quidditch">
+                            Quidditch Experience or Aspirations</label>
+                    <label for="creatures">Magical Creature Affinity:</label>
+                        <select id="creatures" name="creatures">
+                            <option value="" disabled selected>Select a Creature</option>
+                            <option value="dragons">Dragons</option>
+                            <option value="hippogriffs">Hippogriffs</option>
+                            <option value="mandrakes">Mandrakes</option>
+                            <option value="nifflers">Nifflers</option>
+                            <option value="puffskeins">Puffskeins</option>
+                            <option value="snakes">Snakes</option>
+                            <option value="spiders">Spiders</option>
+                            <option value="unicorns">Unicorns</option>
+                            <option value="thestrals">Thestrals</option>
+                        </select>
+                    <label for="clubs">Interest in Joining Clubs:</label>
+                        <select id="clubs" name="clubs">
+                            <option value="" disabled selected>Select a Club</option>
+                            <option value="astronomy">Astronomy Club</option>
+                            <option value="dueling">Duelling Club</option>
+                            <option value="herbology">Herbology Club</option>
+                            <option value="gobstone">Gobstone Society</option>
+                            <option value="magical-creatures">Magical Creatures Club</option>
+                            <option value="potions">Potions Club</option>
+                            <option value="chess">Wizard's Chess Club</option>
+                        </select>
+                </fieldset>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit">Submit Application</button>         
+            </form>
+            
+            
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h4>Hogwarts School of Witchcraft and Wizardry</h4>
+            <address>
+                123 Hogwarts Lane<br>
+                Scotland, Great Britain<br>
+                +44 123 456 7890<br>
+                info@hogwarts.edu
+            </address>
+        </div>
+
+        <div class="footer-center">
+            <a href="#" class="social-icon"><img src="images/x.webp" alt="X" width="30" height="30"></a>
+            <a href="#" class="social-icon"><img src="images/facebook.webp" alt="Facebook" width="30" height="30"></a>
+            <a href="#" class="social-icon"><img src="images/instagram.webp" alt="Instagram" width="30" height="30"></a>
+        </div>
+
+        <div class="footer-right">
+            <p>WDD231 Final Project<br>
+                Kelsey Woodland<br>
+                <span id="currentYear"></span> Hogwarts School of Witchcraft and Wizardry<br>
+                <span id="lastModified"></span>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

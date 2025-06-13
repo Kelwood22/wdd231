@@ -1,0 +1,101 @@
+{
+    "professors": [
+        {
+            "name": "Minerva McGonagall",
+            "experience": "Over 40 years of teaching, former Deputy Headmistress",
+            "courses_taught": [
+                "Transfiguration"
+            ],
+            "house": "Gryffindor"
+        },
+        {
+            "name": "Severus Snape",
+            "experience": "Expert in Potions and Dark Arts, former Headmaster",
+            "courses_taught": [
+                "Potions",
+                "Defense Against the Dark Arts"
+            ],
+            "house": "Slytherin"
+        },
+        {
+            "name": "Filius Flitwick",
+            "experience": "Renowned dueling champion, expert in Charms",
+            "courses_taught": [
+                "Charms"
+            ],
+            "house": "Ravenclaw"
+        },
+        {
+            "name": "Pomona Sprout",
+            "experience": "Herbology specialist, expert in magical plants",
+            "courses_taught": [
+                "Herbology"
+            ],
+            "house": "Hufflepuff"
+        },
+        {
+            "name": "Rubeus Hagrid",
+            "experience": "Magical creature expert, former Keeper of Keys and Grounds",
+            "courses_taught": [
+                "Care of Magical Creatures"
+            ],
+            "house": "Gryffindor"
+        },
+        {
+            "name": "Sybill Trelawney",
+            "experience": "Prophecy and Divination specialist",
+            "courses_taught": [
+                "Divination"
+            ],
+            "house": "Ravenclaw"
+        },
+        {
+            "name": "Aurora Sinistra",
+            "experience": "Astronomy professor with extensive celestial knowledge",
+            "courses_taught": [
+                "Astronomy"
+            ],
+            "house": "Unknown"
+        },
+        {
+            "name": "Horace Slughorn",
+            "experience": "Potions master, former head of the Slug Club",
+            "courses_taught": [
+                "Potions"
+            ],
+            "house": "Slytherin"
+        },
+        {
+            "name": "Wilhelmina Grubbly-Plank",
+            "experience": "Temporary Care of Magical Creatures professor, expert in animal behavior",
+            "courses_taught": [
+                "Care of Magical Creatures"
+            ],
+            "house": "Unknown"
+        },
+        {
+            "name": "Vector Septima",
+            "experience": "Arithmancy professor with expertise in magical numerology",
+            "courses_taught": [
+                "Arithmancy"
+            ],
+            "house": "Unknown"
+        },
+        {
+            "name": "Cuthbert Binns",
+            "experience": "History of Magic professor, ghostly presence in the classroom",
+            "courses_taught": [
+                "History of Magic"
+            ],
+            "house": "Unknown"
+        },
+        {
+            "name": "Quirinus Quirrell",
+            "experience": "Former Defense Against the Dark Arts professor, specialized in magical creatures",
+            "courses_taught": [
+                "Defense Against the Dark Arts"
+            ],
+            "house": "Unknown"
+        }
+    ]
+}

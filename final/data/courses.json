@@ -1,0 +1,74 @@
+{
+    "courses": [
+        {
+            "name": "Charms",
+            "description": "Master the art of spell-casting, from levitation to protection charms.",
+            "credits": 3,
+            "instructor": "Professor Flitwick",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Defense Against the Dark Arts",
+            "description": "Learn to defend yourself against dark creatures and curses.",
+            "credits": 4,
+            "instructor": "Professor Lupin",
+            "prerequisites": "Charms, Basic Wand Skills"
+        },
+        {
+            "name": "Potions",
+            "description": "Discover the secrets of potion-making with precise ingredients and technique.",
+            "credits": 4,
+            "instructor": "Professor Snape",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Transfiguration",
+            "description": "Learn the complex skill of transforming objects and creatures.",
+            "credits": 3,
+            "instructor": "Professor McGonagall",
+            "prerequisites": "Basic Wand Skills"
+        },
+        {
+            "name": "Herbology",
+            "description": "Study magical plants and their uses in potion-making and healing.",
+            "credits": 3,
+            "instructor": "Professor Sprout",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Astronomy",
+            "description": "Examine the stars, planets, and celestial magic.",
+            "credits": 2,
+            "instructor": "Professor Sinistra",
+            "prerequisites": "None"
+        },
+        {
+            "name": "History of Magic",
+            "description": "Explore key events, figures, and magical lore throughout history.",
+            "credits": 2,
+            "instructor": "Professor Binns",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Care of Magical Creatures",
+            "description": "Learn about magical beasts, their behaviors, and proper care techniques.",
+            "credits": 3,
+            "instructor": "Professor Hagrid",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Divination",
+            "description": "Develop skills in prophecy, tea-leaf reading, and crystal ball interpretation.",
+            "credits": 2,
+            "instructor": "Professor Trelawney",
+            "prerequisites": "None"
+        },
+        {
+            "name": "Arithmancy",
+            "description": "Understand magical numerology and its applications in spells.",
+            "credits": 3,
+            "instructor": "Professor Vector",
+            "prerequisites": "Basic Mathematics"
+        }
+    ]
+}

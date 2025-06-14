@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/visitdate.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap"
         as="style">
@@ -42,6 +44,99 @@
                 <li><a href="apply.html" id="join" title="Join">Apply</a></li>
             </ul>
         </nav>
+        <div id="visitMessage"></div>
+
+        <div class="hero-container">
+            <img src="images/hero.webp" alt="Hogwarts Castle" class="hero-image" width="1000" height="300" load="lazy">
+            <div class="cta-container">
+                <h2>Welcome to Hogwarts</h2>
+                <p>Welcome to Hogwarts School of Witchcraft and Wizardry! The castle doors open once more, revealing corridors of mystery,
+                classrooms filled with enchantments, and legends waiting to be written. Whether you seek knowledge, adventure, or a bit
+                of mischief, you are home. The Sorting Hat is ready, your wand awaits—let the magic begin!</p>
+                <a href="application.html" class="cta-button">Apply Now</a>
+            </div>
+        </div>
+        <div class="history-announcements-container">
+            <section class="history">
+                <img src="images/hogwartshistory.webp" alt="Hogwarts History" class="history-image" width="300" height="200" load="lazy">
+                <h2>Our History</h2>
+                <p>Over a thousand years ago, four extraordinary witches and wizards—Godric Gryffindor, Helga Hufflepuff, Rowena
+                    Ravenclaw,
+                    and Salazar Slytherin—joined forces to establish a school where young magical minds could flourish. With secret
+                    passageways, moving staircases, and portraits that talk, Hogwarts has become more than just an institution—it is
+                    a place
+                    of wonder and legacy. From the creation of the Sorting Hat to the mysteries held within the Forbidden Forest,
+                    every
+                    stone in this castle has a tale to tell.
+                    Fun fact: The school’s motto is "Draco dormiens nunquam titillandus"—or, "Never tickle a sleeping dragon." Wise
+                    advice
+                    indeed!
+                </p>
+            </section>
+
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <article>
+                    <h3>Quidditch Season Begins</h3>
+                    <p>The Quidditch season is upon us! Get ready to cheer for your house team and witness thrilling matches.</p>
+                </article>
+                <article>
+                    <h3>Enchanted Scrolls</h3>
+                    <p>The library has received a rare collection of enchanted scrolls—students are advised to handle with care!</p>
+                </article>
+                <article>
+                    <h3>Upcoming Events</h3>
+                    <p>Join us for the annual Yule Ball! A night of enchantment, dancing, and magical surprises awaits.</p>
+                </article>
+                <article>
+                    <h3>Thunderstorm</h3>
+                    <p>A thunderstorm is rolling in—expect mystical energy to be in the air. Stay indoors or risk unpredictable magic!</p>
+                </article>
+                <article>
+                    <h3>House Cup</h3>
+                    <p>- House Cup standings updated! Gryffindor leads, but the race is far from over!</p>
+                </article>
+            </section>
+        </div>
+
+        <section class="testimonials">
+            <h2>What Our Students Say</h2>
+            <blockquote>
+                <p>"Hogwarts is a place where magic comes alive. The friendships I've made and the lessons I've learned are truly unforgettable! - Harry Potter"</p>
+            </blockquote>
+            <blockquote>
+                <p>"The professors at Hogwarts are not just teachers; they are mentors who guide you through the magical world. - Hermione Granger"</p>
+            </blockquote>
+            <blockquote>
+                <p>"Every day at Hogwarts is an adventure. From exploring the Forbidden Forest to attending magical feasts, there's never a dull moment! - Ron Weasley"</p>
+            </blockquote>
+        </section>
+        
+        <section class="quotes">
+            <h2>Quotes from Famous Witches and Wizards</h2>
+            <blockquote>
+                <p>"It does not do to dwell on dreams and forget to live." - Albus Dumbledore</p>
+            </blockquote>
+            <blockquote>
+                <p>"Every great wizard in history has started out as nothing more than what we are now—students. If they can do it, why
+                not us?" - Professor Lupin</p>
+            </blockquote>
+            <blockquote>
+                <p>"It is our choices that show what we truly are, far more than our abilities." - Albus Dumbledore</p>
+            </blockquote>
+            <blockquote>
+                <p>"Happiness can be found even in the darkest of times, if one only remembers to turn on the light." - Albus Dumbledore</p>
+            </blockquote>
+            <blockquote>
+                <p>- When in doubt, go to the library." - Professor McGonagall</p>
+            </blockquote>
+        </section>
+
+        <section id="weather">
+            <h2>Hogwarts Weather</h2>
+            <div id="weather-info">Loading... </div>
+        </section>>
+
     </main>
     
     <footer>
@@ -65,7 +160,8 @@
             <p>WDD231 Final Project<br>
                 Kelsey Woodland<br>
                 <span id="currentYear"></span> Hogwarts School of Witchcraft and Wizardry<br>
-                <span id="lastModified"></span>
+                <span id="lastModified"></span><br>
+                <href="attributions.html">Attributions</a>
             </p>
         </div>
     

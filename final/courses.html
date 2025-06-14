@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogwarts School of Witchcraft and Wizardry</title>
-    <meta name="description" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <title>Hogwarts School of Witchcraft and Wizardry Courses</title>
+    <meta name="description" content="Hogwarts School of Witchcraft and Wizardry Courses Page">
     <meta name="author" content="Kelsey Woodland">
-    <meta property="og:title" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <meta property="og:title" content="Hogwarts School of Witchcraft and Wizardry Courses Page">
     <meta property="og:description"
-        content="The Hogwarts School of Witchcraft and Wizardry is a magical institution that provides education to young witches and wizards. This home page includes information about the school, its history, and information on how to apply.">
-    <meta property="og:image" content="https://kelwood22.github.io/wdd231/final/index.html/images/.webp">
-    <meta property="og:url" content="https://kelwood22.github.io/wdd231/final/index.html">
+        content="The Hogwarts School of Witchcraft and Wizardry is a magical institution that provides education to young witches and wizards. This courses page includes information about the various courses offered at the school.">
+    <meta property="og:image" content="https://kelwood22.github.io/wdd231/final/images/hogwartshistory.webp">
+    <meta property="og:url" content="https://kelwood22.github.io/wdd231/final/courses.html">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap"
         as="style">
@@ -43,6 +44,13 @@
                 <li><a href="apply.html" id="join" title="Join">Apply</a></li>
             </ul>
         </nav>
+        <h2>Courses</h2>
+        <div id="courseCards">
+            <div class="courses"></div>
+        </div>
+        <dialog id="courseDetails"></dialog>
+
+
     </main>
 
     <footer>
@@ -66,7 +74,8 @@
             <p>WDD231 Final Project<br>
                 Kelsey Woodland<br>
                 <span id="currentYear"></span> Hogwarts School of Witchcraft and Wizardry<br>
-                <span id="lastModified"></span>
+                <span id="lastModified"></span><br>
+                <href="attributions.html">Attributions</a>
             </p>
         </div>
 

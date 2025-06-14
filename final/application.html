@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogwarts School of Witchcraft and Wizardry</title>
-    <meta name="description" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <title>Hogwarts School of Witchcraft and Wizardry Application Page</title>
+    <meta name="description" content="Hogwarts School of Witchcraft and Wizardry Application Page">
     <meta name="author" content="Kelsey Woodland">
-    <meta property="og:title" content="Hogwarts School of Witchcraft and Wizardry Home Page">
+    <meta property="og:title" content="Hogwarts School of Witchcraft and Wizardry Application Page">
     <meta property="og:description"
-        content="The Hogwarts School of Witchcraft and Wizardry is a magical institution that provides education to young witches and wizards. This home page includes information about the school, its history, and information on how to apply.">
-    <meta property="og:image" content="https://kelwood22.github.io/wdd231/final/index.html/images/.webp">
-    <meta property="og:url" content="https://kelwood22.github.io/wdd231/final/index.html">
+        content="The Hogwarts School of Witchcraft and Wizardry is a magical institution that provides education to young witches and wizards. This application page  allows prospective students to apply for admission.">
+    <meta property="og:image" content="https://kelwood22.github.io/wdd231/final/images/hogwartshistory.webp">
+    <meta property="og:url" content="https://kelwood22.github.io/wdd231/final/application.html">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/applicationdate.js" defer></script>
     <script src="scripts/application.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz@10..72&display=swap"
         as="style">
@@ -51,14 +52,29 @@
                 
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label for="first">First Name<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                    <label for="last">Last Name<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    <label for="birthdate">Birthdate<input type="date" name="birthdate" required autocomplete="bday" title="Your Birthdate"></label>
-                    <label for="address">Address<input type="text" name="address" required autocomplete="street-address" title="Your Street Address"></label>
-                    <label for="city">City<input type="text" name="city" required autocomplete="address-level2" title="Your City"></label>
-                    <label for="state">State/Province<input type="text" name="state" required autocomplete="address-level1" title="Your State or Province"></label>
-                    <label for="postal">Postal Code<input type="text" name="postal" required autocomplete="postal-code" title="Your Postal Code" pattern="[A-Za-z0-9\- ]{5,10}"></label>
-                    <label for="country">Country<input type="text" name="country" required autocomplete="country" title="Your Country" pattern="[A-Za-z\- ]{2,}"></label>
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" name="first" required autocomplete="given-name" title="Your First Name">
+
+                    <label for="last">Last Name</label>
+                    <input type="text" id="last" name="last" required autocomplete="family-name" title="Your Last Name">
+
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" required autocomplete="bday" title="Your Birthdate">
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required autocomplete="address-line1" title="Your Street Address">
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required autocomplete="address-line2" title="Your City">
+
+                    <label for="state">State/Province</label>
+                    <input type="text" id="state" name="state" required autocomplete="address-line3" title="Your State or Province">
+
+                    <label for="postal">Postal Code</label>
+                    <input type="text" id="postal" name="postal" required autocomplete="postal-code" title="Your Postal Code" pattern="[A-Za-z0-9\- ]{5,10}">
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required autocomplete="country" title="Your Country" pattern="[A-Za-z\- ]{2,}">
                 </fieldset>
                 
                 <fieldset>
@@ -189,7 +205,8 @@
             <p>WDD231 Final Project<br>
                 Kelsey Woodland<br>
                 <span id="currentYear"></span> Hogwarts School of Witchcraft and Wizardry<br>
-                <span id="lastModified"></span>
+                <span id="lastModified"></span><br>
+                <href="attributions.html">Attributions</a>
             </p>
         </div>
 

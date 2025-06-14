@@ -5,70 +5,129 @@
             "description": "Master the art of spell-casting, from levitation to protection charms.",
             "credits": 3,
             "instructor": "Professor Flitwick",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/charms.webp"
         },
         {
             "name": "Defense Against the Dark Arts",
             "description": "Learn to defend yourself against dark creatures and curses.",
             "credits": 4,
             "instructor": "Professor Lupin",
-            "prerequisites": "Charms, Basic Wand Skills"
+            "prerequisites": "Charms, Basic Wand Skills",
+            "image": "images/darkarts.webp"
         },
         {
             "name": "Potions",
             "description": "Discover the secrets of potion-making with precise ingredients and technique.",
             "credits": 4,
             "instructor": "Professor Snape",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/potions.webp"
         },
         {
             "name": "Transfiguration",
             "description": "Learn the complex skill of transforming objects and creatures.",
             "credits": 3,
             "instructor": "Professor McGonagall",
-            "prerequisites": "Basic Wand Skills"
+            "prerequisites": "Basic Wand Skills",
+            "image": "images/transfiguration.webp"
         },
         {
             "name": "Herbology",
             "description": "Study magical plants and their uses in potion-making and healing.",
             "credits": 3,
             "instructor": "Professor Sprout",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/herbology.webp"
         },
         {
             "name": "Astronomy",
             "description": "Examine the stars, planets, and celestial magic.",
             "credits": 2,
             "instructor": "Professor Sinistra",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/astronomy.webp"
         },
         {
             "name": "History of Magic",
             "description": "Explore key events, figures, and magical lore throughout history.",
             "credits": 2,
             "instructor": "Professor Binns",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/history.webp"
         },
         {
             "name": "Care of Magical Creatures",
             "description": "Learn about magical beasts, their behaviors, and proper care techniques.",
             "credits": 3,
             "instructor": "Professor Hagrid",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/magicalcreatures.webp"
         },
         {
             "name": "Divination",
             "description": "Develop skills in prophecy, tea-leaf reading, and crystal ball interpretation.",
             "credits": 2,
             "instructor": "Professor Trelawney",
-            "prerequisites": "None"
+            "prerequisites": "None",
+            "image": "images/divination.webp"
         },
         {
             "name": "Arithmancy",
             "description": "Understand magical numerology and its applications in spells.",
             "credits": 3,
             "instructor": "Professor Vector",
-            "prerequisites": "Basic Mathematics"
+            "prerequisites": "Basic Mathematics",
+            "image": "images/arithmancy.webp"
+        },
+        {
+            "name": "Flying Lessons",
+            "description": "Learn the basics of broomstick flying and aerial maneuvers.",
+            "credits": 1,
+            "instructor": "Madam Hooch",
+            "prerequisites": "None",
+            "image": "images/flying.webp"
+        },
+        {
+            "name": "Care of Magical Plants",
+            "description": "Study the properties and uses of magical flora in various applications.",
+            "credits": 3,
+            "instructor": "Professor Sprout",
+            "prerequisites": "Herbology Basics",
+            "image": "images/magicalplants.webp"
+        },
+        {
+            "name": "Advanced Potions & Elixirs",
+            "description": "Create complex potions and elixirs with rare ingredients and advanced techniques.",
+            "credits": 4,
+            "instructor": "Professor Snape",
+            "prerequisites": "Potions Basics",
+            "image": "images/advancedpotions.webp"
+        },
+        {
+            "name": "Ancient Runes",
+            "description": "Decode the mysteries of runic symbols and their magical applications.",
+            "credits": 3,
+            "instructor": "Professor Babbling",
+            "prerequisites": "Basic Latin and Magical Theory",
+            "image": "images/runes.webp"
+        },
+        {
+            "name": "Magical Theory",
+            "description": "Explore the fundamental principles behind spell creation, magical laws, and enchantment stability.",
+            "credits": 3,
+            "instructor": "Professor Wilton",
+            "prerequisites": "Charms & Transfiguration Basics",
+            "image": "images/theory.webp"
+        },
+        {
+            "name": "Alchemy",
+            "description": "Learn the ancient magical science of transforming matter, including gold transmutation and the Philosopher’s Stone principles.",
+            "credits": 4,
+            "instructor": "Professor Melrose",
+            "prerequisites": "Potions, Transfiguration",
+            "image": "images/alchemy.webp"
         }
     ]
 }
+

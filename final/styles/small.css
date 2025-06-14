@@ -6,8 +6,10 @@
     --primary-font: 'Big Shoulders', sans-serif;
 }
 
-body {
+html, body {
     font-family: "Big Shoulders", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,13 +36,48 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-main {
+#visitMessage {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-container {
+    position: relative;
     width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
 
 }
 
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(168, 166, 168, 0.5);
+    padding: 20px;
+    color: black;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: rgb(90, 13, 90);
+}
 
 #menuButton {
     font-size: 2rem;
@@ -74,11 +111,11 @@ ul.menuLinks {
 }
 
 ul.menuLinks a:hover {
-    background-color: rgba(85, 40, 111, 0.2);
+    background-color: rgba(85, 40, 111, 0.1);
 }
 
 li.active a {
-    background-color: rgba(85, 40, 111, 0.2);
+    background-color: rgba(85, 40, 111, 0.1);
 }
 
 .menu {
@@ -97,6 +134,48 @@ li.active a {
 
 h2 {
     color: var(--accent-color)
+}
+
+.history-announcements-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.history {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 20px 0;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.announcements {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 20px 0;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+}
+
+.testimonials, .quotes {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 20px 0;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
 }
 
 form {
@@ -135,7 +214,7 @@ textarea {
 }
 
 form button {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: white;
     padding: 10px;
     border: 1px solid var(--accent-color);
@@ -151,6 +230,64 @@ form button:hover {
 }
 
 
+#courseCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color:  var(--background-color);
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;;
+}
+
+.courses {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 400px;
+    color: var(--background-color);
+}
+
+.courses:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);   
+}
+
+.learnMoreButton {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Big Shoulders", sans-serif;
+    margin: 10px 0;
+}
+
+dialog {
+    border-radius: 8px;
+}
+
+#weather {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#weather-info img {
+    width: 50px;
+}
 
 
 
@@ -188,4 +325,22 @@ footer {
 
 .social-icon:hover {
     color:  var(--accent-color);
+}
+
+@media only screen and (max-width: 37.5rem) {
+    .history-announcements-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    .history, .announcements {
+            margin: 0 auto;
+        }
+    
+    .cta-container {
+            position: static;
+            transform: none;
+            width: 100%;
+            padding: 10px;
+        }
 }
